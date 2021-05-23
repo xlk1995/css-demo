@@ -12,3 +12,14 @@
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.clearfix::after {
+  display: block;
+  content: '';
+  clear: both;
+}
