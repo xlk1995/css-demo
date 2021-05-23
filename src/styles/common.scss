@@ -1,0 +1,14 @@
+// 单行或多行文本超出显示省略号 有兼容性问题 容器撑开用margin
+@mixin ell ($number) {
+  display: -webkit-box;
+  -webkit-line-clamp: $number;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+// 单行文本溢出
+.ell {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
